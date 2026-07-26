@@ -7,3 +7,4 @@ def low_rank_approximation(A, r):
     A = np.array(A, dtype=float)
     U, s, Vt = np.linalg.svd(A, full_matrices=False)
     return (U[:, :r] @ np.diag(s[:r]) @ Vt[:r, :]).astype(np.float64)
+    
