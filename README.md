@@ -23,6 +23,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 |---|---|---|
 | Implement Cosine Similarity | Compute cosine similarity between NumPy vectors with dot products, Euclidean norms, and zero-vector handling. | https://www.tensortonic.com/problems/cosine-similarity |
 | Implement Dot Product | Implement the dot product of equal-length numeric vectors by summing element-wise products without library shortcuts. | https://www.tensortonic.com/problems/dot-product |
+| Matrix Transpose | Implement matrix transpose in NumPy without built-in transpose helpers, preserving rectangular shapes and the original input. | https://www.tensortonic.com/problems/matrix-transpose |
 | Cholesky Decomposition | Factor a symmetric positive-definite NumPy matrix into a lower-triangular matrix and its transpose. | https://www.tensortonic.com/study-plans/math-linear-algebra/la-cholesky |
 | Implement Cosine Similarity | Compute cosine similarity between NumPy vectors with explicit handling for zero-norm inputs. | https://www.tensortonic.com/study-plans/math-linear-algebra/la-cosine-similarity |
 | Implement Dot Product | Compute the algebraic dot product and geometric angle relationship for two equal-length NumPy vectors. | https://www.tensortonic.com/study-plans/math-linear-algebra/la-dot-product |
