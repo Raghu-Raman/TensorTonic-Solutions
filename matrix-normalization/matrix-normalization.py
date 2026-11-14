@@ -5,13 +5,15 @@ def matrix_normalization(matrix: list, axis=None, norm_type: str = "l2") -> np.n
     Returns a NumPy array with the same shape as matrix.
     """
     # Write code here
-    matrix = np.asarray(matrix, dtype=float)
+    x = np.asarray(matrix, dtype=np.float64)
+    norm = None
+
     if norm_type == "l1":
-        norms = np.sum(np.abs(matrix), axis=axis, keepdims=True)
+        norm = np.sum(np.abs(x), axis=axis, keepdims=True)
     elif norm_type == "l2":
-        norms = np.sqrt(np.sum(matrix ** 2, axis=axis, keepdims=True))
+        norm = np.sqrt(np.sum(pow(x, 2), axis=axis, keepdims=True))
     else:
-        norms = np.max(np.abs(matrix), axis=axis, keepdims=True)
-    safe_norms = np.where(norms == 0, 1.0, norms)
-    return matrix / safe_norms    
+        norm = np.max(np.abs(x), axis=axis, keepdims=True)
+
+    return x / np.where(norm == 0, 1, norm)   
             
