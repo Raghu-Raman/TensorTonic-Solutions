@@ -9,6 +9,5 @@ def filter_and_extract(data: list, row_start: int, row_stop: int, threshold: flo
     mask = data > threshold
     data = mask * data
     data = data[data!=0]
-    print(data)
     return data
     
